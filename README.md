@@ -14,6 +14,6 @@ manage_system/manage_system/manage_system/secret.py
 ```
 
 ```
-/manage_system/manage_system/static/js/crypt/crypt_util.js
+manage_system/manage_system/static/js/crypt/crypt_util.js
 - 需加入公钥信息
 ```
