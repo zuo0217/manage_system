@@ -36,21 +36,7 @@ def check_time(number):
 
 
 def decodeRSA(rsa_txt):
-    private_key_str = '-----BEGIN RSA PRIVATE KEY-----\n' \
-                      + 'MIICXAIBAAKBgQDMqNExDMYadBXKNlC1SHfsW5paOYJmSL/fWmXEhvUZpeuif6sa\n' \
-                      + 'WQX6731hFeKa4houuAw5PxZGirmbFXdgukHWzJv7AlwCB7Kv+9ww5809E1m8AsH9\n' \
-                      + 'NYdeB9K9pRZ9Fiih5kjG3gV2/RCRkXKBhwhhiipuWBMGNQgfpYNCGIzi6QIDAQAB\n' \
-                      + 'AoGAWvLao/WNQ8w6srYYf7dIs9yxZ08PR+0kd1lwyDlBSriVUo1xuC+/nJg5G5/i\n' \
-                      + 'J/o6sHBR3k7O02JqwSR0/KNJBiOqrWa/KmfXlIT4//BhTCRVAPIfABwQRrZWRUZk\n' \
-                      + 'RFLS5bwb87m0BGKfBrZL3MOho3KI4rgVE/6dFYlFRzFghgECQQD3yxMcFwJjMl7R\n' \
-                      + 'cLZeBVkmaE4rXIPibz5LxE6lXFU5HbEe0fnXtZhJg1P2WqzL4Im5kaHRNBBQfIlh\n' \
-                      + 'y9d+KoiRAkEA03AH2PBbvEB/m3Imq2IG9zwiAkrEk0IComGFJNezj+iVlTShlmZj\n' \
-                      + 'nj/7fk9AXDzXdjKT6SUaoz5f0O3yDR0g2QJATHR3D/q1fN/ky6CIVFg4GpaiT9S6\n' \
-                      + 'yJnkUcJfNbxYe0gDB2xoNztLopsHxAJUQI+mTwB1OjRjOEJErU0Uz1PWUQJBAJe3\n' \
-                      + 'gcoG3qx8U5SFGn5LvtfVDEo8wEUyTpWaCGHhbXVL3VnNBE3Zdo3tN1bxIyuMdMbZ\n' \
-                      + 'kAzxlOWiMjrHIrKKPjECQCbEL2uhkXhNboDKGA9foEQW1D8STGLJDKmjYH9axaLc\n' \
-                      + 'o7/s2ycRS/eC5SRUqqkkc4tsbnC1JtLZtpXpR9xsuvQ=\n' \
-                      + '-----END RSA PRIVATE KEY-----'
+    private_key_str = "" ## 私钥需自行生成
 
     rsakey = RSA.importKey(private_key_str)
     cipher = Cipher_pkcs1_v1_5.new(rsakey)
